@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h2 class="logo"><span class="solo">G</span>andhi.</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Showcase</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Developer</p>
+                <p>Public Speaker</p>
+                <p>Peer Counsellor</p>
+                <p>Writer</p>
+                <h1>Hello, I'm <span>Pius</span><br>Gandhi from Cameroon</h1>
+            </div>
+        </div> 
+    </div>
+   <!------------------About-------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/left.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a young Cameroonian who is passionate about the world of technology and has trodden the path leading to it. My dream is to become a fullstack developer, and one day start my own tech company. I'm currently a junior web developer, a writer and public speaker and peer counsellor as well.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web app Development</li>
+                            <li><span>Public Speaker</span><br>Presenting talks, seminars and conferences</li>
+                            <li><span>Script Writing</span><br>Bringing information to the world. From news, drama to film casting.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>African Dreams Bamenda</li>
+                            <li><span>2020 - 2021</span><br>City FM Radio Che Street Bamenda</li>
+                            <li><span>2017 - 2019</span><br>Hope For A Better Future Bamenda</li>
+                            <li><span>2016 - 2017</span><br>Ntankah Village Women Common Initiative Group.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Present</span><br>Higher Institute of Technology and Management Sciences</li>
+                            <li><span>2020</span><br>Advanced Level Certificate</li>
+                            <li><span>2018</span><br>Ordinary Level Certificate</li>
+                            <li><span>2013</span><br>First School Leaving Certificate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!----------------Services----------------->
+<div id="services">
+     <div class="container">
+        <h1 class="sub-title">My Services</h1>
+           <div class="services-list">
+              <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Creative Writing</h2>
+                <p>Sending the right message isn't the only trouble people face. But how to send the message and make them feel the way you want is even bigger trouble. I assemble the right words in no time and make your story known to the world.</p>
+                <a href="#">Learn more</a>
+           </div>
+           <div>
+               <i class="fas fa-crop-alt"></i>
+               <h2>UI/UX Design</h2>
+               <p>Give users of your dvices the aesthetic feeling they deserve by creating amazing touch-feel user interfaces and leave them gasp for more. I'm that person to design the best interface for all your devices.</p>
+               <a href="#">Learn more</a>
+           </div>
+           <div>
+               <i class="fa-solid fa-handshake-angle"></i>
+               <h2>Counselling</h2>
+               <p>In a world of non-stop competition and escalating desires. The road to the underworld leads youths to a no man land. I'm that figure to render directives and guidance to my peers. Link up with me and share your experiences too.</p>
+               <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------Portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/pro.jpg" class="longer">
+                <div class="layer">
+                    <h3>Tale  of a Tree</h3>
+                    <p>Tell short stories that restore hope to all hearts.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/second.jpeg" class="long">
+                <div class="layer">
+                    <h3></h3>
+                    <p>Up coming UI/UX designs for all devices</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/sem.jpg" class="third">
+                <div class="layer">
+                    <h3>Peer Talk Program</h3>
+                    <p>Build confidence in yourself and get motivation from others. Know you're not alone by living others' experiences through listening.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------Contact-------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> piusgandhi21@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +237 671763135</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/piusgandhi"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/piusgandhi"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/piusgandhi"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="Images/Newly Created.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © Pius Gandhi 2023 All rights reserved</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby2npH4UhFTQ1-jTPk0BsM0PsQJ6aT2cy98oSBrVJJkgOnTaUroJCnMvdDk5GOUCq1z/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message sent successfully"
+         setTimeout(function(){   msg.innerHTML = ""
+         },5000)
+         form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
